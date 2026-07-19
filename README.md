@@ -1,4 +1,5 @@
-## Hi there 👋
+## About
+Showcase site for my experimental works.
 
 <!--
 **ofg135/ofg135** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
