@@ -5,7 +5,7 @@
   font-family: monospace;
   text-transform: uppercase;
 }
-.menu{
+header{
   position: fixed;
   top: 0;
   width: 100%;
@@ -33,7 +33,7 @@
   transform: translate(-50%, -50%) scale(3);
   z-index: 1000;
 }*/
-.gallery {
+main {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
   gap: 8px;
@@ -42,13 +42,13 @@
 }
 
 @media (max-width: 800px) {
-  .gallery {
+  main {
     grid-template-columns: repeat(2, 1fr); /* 2 colonnes sur petit écran */
   }
 }
 
 @media (max-width: 400px) {
-  .gallery {
+  main {
     grid-template-columns: 1fr; /* 1 seule colonne sur mobile étroit */
   }
 }
