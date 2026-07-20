@@ -3,9 +3,45 @@
   padding: 0;
   box-sizing: border-box;
   font-family: monospace;
+  text-transform: uppercase;
 }
 .item {
   display: flex;
   align-items: center; /* ou flex-start si tu préfères aligner en haut */
   gap: 12px;
+  border: solid 0px black;
+}
+.item img {
+  max-width: 300px;
+  max-height: 300px;
+  width: auto;
+  height: auto;
+  flex-shrink: 0;
+}
+/*.item img:hover {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(3);
+  z-index: 1000;
+}*/
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  gap: 0px;
+}
+
+@media (max-width: 800px) {
+  .gallery {
+    grid-template-columns: repeat(2, 1fr); /* 2 colonnes sur petit écran */
+  }
+}
+
+@media (max-width: 400px) {
+  .gallery {
+    grid-template-columns: 1fr; /* 1 seule colonne sur mobile étroit */
+  }
+}
+pre{
+  line-height: 1;
 }
