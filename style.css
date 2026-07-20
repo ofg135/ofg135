@@ -4,3 +4,8 @@
   box-sizing: border-box;
   font-family: monospace;
 }
+.item {
+  display: flex;
+  align-items: center; /* ou flex-start si tu préfères aligner en haut */
+  gap: 12px;
+}
