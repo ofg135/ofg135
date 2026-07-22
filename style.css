@@ -1,16 +1,17 @@
 :root{
-  --fg: #fff;
-  --bg: #000;
-  /* --accent: #222323; */
+  --fg: #f0f6f0;
+  --bg: #222323;
 }
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: monospace;
+  font-family: "jgs", monospace;
   text-transform: uppercase;
   background-color: var(--bg);
   color: var(--fg);
+  border-radius: 4px;
+  font-size: 16px;
 }
 
 header {
@@ -20,13 +21,14 @@ header {
   padding: 8px;
   border-bottom: 1px solid var(--fg);
   z-index: 5;
+  border-radius: 0;
 }
 
 main {
   display: grid;
   grid-template-columns: 1fr; /* mobile par défaut */
   gap: 8px;
-  margin-top: 62px;
+  margin-top: 68px;
   padding: 8px;
 }
 
@@ -59,7 +61,7 @@ main {
   width: 100%;
   height: 100%;   /* prend toute la hauteur de .item */
   object-fit: contain;
-  /* filter: url(#duotone); */ /* effet duotone sur les images avec --fg: #222323; --bg: #f0f6f0;*/
+  filter: url(#duotone); /* effet duotone sur les images avec --fg: #222323; --bg: #f0f6f0;*/
   background-color: transparent;
 }
 
@@ -77,15 +79,22 @@ main {
 pre {
   /*line-height: 1;*/
   /* text-align: left; */
+  font-family: monospace;
+  font-size: min(2vw, 13px);
+  white-space: pre;
+  overflow-x: hidden;
 }
 
 footer {
   padding: 8px;
   /* text-align: right; */
+  font-family: monospace;
 }
 
 h1 {
-  color: var(--accent);
+  color: var(--fg);
+  font-family: "pp mondwest", monospace;
+  font-size: 2rem;
 }
 b {
   font-weight: inherit; /* désactive le bold des titres */
