@@ -1,5 +1,5 @@
 ## About
-Showcase site for my experimental works.
+A showcase archive for my experimental and unfinished 2D/3D motion & graphic design work.
 
 <!--
 **ofg135/ofg135** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
