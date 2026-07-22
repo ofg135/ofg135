@@ -53,7 +53,7 @@ main {
   height: 200px; /* hauteur fixe pour toutes les cases */
 }
 
-.item img {
+.item img, .item video {
   flex: 1 1 50%;
   min-width: 0;
   width: 100%;
@@ -63,7 +63,7 @@ main {
   background-color: transparent;
 }
 
-.item img:hover {
+.item img:hover, .item video:hover {
   filter: unset;
   /* object-fit:cover; */
 }
